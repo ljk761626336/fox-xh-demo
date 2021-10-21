@@ -1,0 +1,17 @@
+ext {
+    // 用于编译的SDK版本
+    COMPILE_SDK_VERSION = 30
+    // 用于Gradle编译项目的工具版本
+    BUILD_TOOLS_VERSION = "28.0.3"
+    // 最低支持Android版本
+    MIN_SDK_VERSION = 19
+    // 目标版本
+    TARGET_SDK_VERSION = 30
+    // 设置是否使用混淆
+    MINIFY_ENABLED = false
+    // 设置是否在打包时压缩资源
+    ZIP_SOURCE = false
+    //api引用版本
+    APPCOMPAT_VERSION = '28.0.0'
+
+}

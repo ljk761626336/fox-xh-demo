@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/common_layout_selector_single">
+
+        <ImageView
+            android:id="@+id/image_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/widget_tree_view_icon_unexpend" />
+
+        <TextView
+            android:id="@+id/text_all_Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/image_arrow"
+            android:clickable="false"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/check_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

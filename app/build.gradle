@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    //buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.fox.fox_xh"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //Jdk1.8
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'com.vividsolutions:jts:1.13'
+    //implementation project(path: ':foxjar')
+    //retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.8'//引入rxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'//引入rxAndroid
+    //rx生命周期
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-navi:2.1.0'
+    implementation 'com.blankj:utilcode:1.18.2'
+
+    implementation 'com.blankj:utilcode:1.30.0'
+    implementation 'com.esri.arcgisruntime:arcgis-android:100.7.0'
+
+    implementation project(path: ':xpermit')
+    implementation project(path: ':arcruntime')
+
+
+}

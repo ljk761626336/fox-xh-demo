@@ -1,0 +1,7 @@
+ext {
+    // 应用程序包名
+    APPLICATION_ID = 'com.titan.mobile.arcruntime'
+    //基线版本名称和版本号，发布热修复包时不用更改
+    VERSION_NAME = '1.01'
+    VERSION_CODE = 1
+}

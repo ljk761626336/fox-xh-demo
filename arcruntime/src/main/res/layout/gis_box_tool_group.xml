@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lib.bandaid.widget.other.ComLinerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/move_tool_panel"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+</com.lib.bandaid.widget.other.ComLinerLayout>
